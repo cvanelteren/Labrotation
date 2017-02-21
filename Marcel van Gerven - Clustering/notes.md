@@ -1,0 +1,4 @@
+# Questions about the Parcellation paper
+- The likelihood assumes a normal-gamma distribution, this is justifiable for MR data but not necessarily for the data in the zebrafish
+- Per cluster a mean an precission are estimates, and then per voxel data are sampled using this mean and precision, why is this done per voxel? Wouldn't it make sense to do this per cluster? Now we have the case that we have more samples for larger clusters, or am I missing something?
+- The concentration parameter for the dd-CRP controls whether a new customer joins a non-empty table or not. Moreover, it is taken into account the distance between other members located at other tables. However, how is this hyperparameter chosen? I guess one can argue that if you take it to be around cell-body size, but then it might create a lot of clusters.
